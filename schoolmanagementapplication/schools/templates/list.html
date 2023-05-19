@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of School</title>
+</head>
+<body>
+
+<table>
+
+    <thead>
+
+    <tr>
+        <th>School Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    {% for school in schools %}
+
+    <tr>
+
+        <td>{{school.schoolId}}</td>
+        <td>{{school.name}}</td>
+        <td>{{school.email}}</td>
+        <td>{{school.contact}}</td>
+
+    </tr>
+    {%endfor%}
+
+    </tbody>
+
+</table>
+
+</body>
+</html>

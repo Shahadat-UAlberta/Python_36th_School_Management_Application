@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add School</title>
+</head>
+<body>
+
+<form method="POST" action="/add">
+    {%csrf_token%}
+    <div>
+        <label>Enter School Id</label>
+        <!--        <input type="text" name="schoolId" placeholder="Enter School ID">-->
+        {{form.schoolId}}
+    </div>
+    <br>
+    <div>
+        <label>Enter Name</label>
+        <!--        <input type="text" name="name" placeholder="Enter School Name">-->
+        {{form.name}}
+    </div>
+    <br>
+    <div>
+        <label>Enter Email</label>
+        <!--        <input type="text" name="email" placeholder="Enter School Email">-->
+        {{form.email}}
+    </div>
+    <br>
+
+    <div>
+        <label>Enter Contact</label>
+        <!--        <input type="text" name="contact" placeholder="Enter School Contact">-->
+        {{form.contact}}
+    </div>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+</form>
+
+</body>
+</html>
